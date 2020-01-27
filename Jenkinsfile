@@ -8,7 +8,8 @@ pipeline {
         }
         stage ("docker"){
             steps{
-                echo "changelog"
+                sh "docker pull prooph/github-changelog-generator"
+                sh "github_changelog_generator --help"
             }
         }
 
