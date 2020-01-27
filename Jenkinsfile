@@ -9,7 +9,7 @@ pipeline {
         stage ("docker"){
             steps{
                 sh "docker pull ferrarimarco/github-changelog-generator"
-                sh "docker run -it --rm -v "$(pwd)":/usr/local/src/your-app ferrarimarco/github-changelog-generator"
+                sh "docker run ferrarimarco/github-changelog-generator - v"
             }
         }
 
