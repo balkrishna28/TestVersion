@@ -8,7 +8,7 @@ pipeline {
         }
         stage ("docker"){
             steps{
-                sh "docker pull prooph/github-changelog-generator"
+                sh "docker pull ferrarimarco/github-changelog-generator"
             }
         }
 
