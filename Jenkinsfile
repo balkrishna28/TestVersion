@@ -6,6 +6,11 @@ pipeline {
                 echo "its working"
             }
         }
+        stage ("changlog"){
+            steps{
+                echo "changelog"
+            }
+        }
 
     }
 }
