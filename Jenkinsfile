@@ -6,7 +6,7 @@ pipeline {
                 echo "its working"
             }
         }
-        stage ("changlog"){
+        stage ("docker"){
             steps{
                 echo "changelog"
             }
