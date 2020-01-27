@@ -9,9 +9,6 @@ pipeline {
         stage ("docker"){
             steps{
                 sh "docker pull prooph/github-changelog-generator"
-                docker.image(ferrarimarco/github-changelog-generator){
-                    echo "test"
-                }
             }
         }
 
