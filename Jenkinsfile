@@ -16,7 +16,7 @@ pipeline {
                     sh 'git config user.name "bal"'
                     sh 'git config user.email "balkrishna36@gmail.com"'
                     sh 'git add CHANGELOG.md'
-                    sh 'git commit -a'
+                    sh 'git commit -m "its not working"'
                     sh 'git push origin master'
              }
         } 
