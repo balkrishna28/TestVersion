@@ -15,7 +15,6 @@ pipeline {
                     sh 'docker run --rm -v "$(pwd)":/usr/local/src/your-app ferrarimarco/github-changelog-generator --user  balkrishna28  --project TestVersion'
                     sh 'cd /var/lib/jenkins/workspace/TestVersionNumber'
                     sh 'ls'
-                    cat "CHANGELOG.md"
                     sh 'git url: "https://github.com/balkrishna28/TestVersion.git"'
              }
         } 
