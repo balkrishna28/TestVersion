@@ -15,6 +15,7 @@ pipeline {
                     sh 'ls'
                     sh 'git config user.name "bal"'
                     sh 'git config user.email "balkrishna36@gmail.com"'
+                    sh 'git remote add origin git@github.com:balkrishna28/TestVersion.git'
                     sh 'git add CHANGELOG.md'
                     sh 'git commit -m "its not working"'
                     sh 'git push origin master'
