@@ -12,7 +12,7 @@ pipeline {
                     sh "docker pull ferrarimarco/github-changelog-generator"
                     // docker run -it --rm -v "$(pwd)":/usr/local/src/your-app ferrarimarco/github-changelog-generator
                 
-                    sh 'docker run --rm -v "$(pwd)":/usr/local/src/TestVersion ferrarimarco/github-changelog-generator  --user  balkrishna28  --project TestVersion' 
+                    sh 'docker run --rm -v "$(pwd)":/usr/local/src/balkrishna28/TestVersion ferrarimarco/github-changelog-generator  --user  balkrishna28  --project TestVersion' 
                 }
             }
         } 
