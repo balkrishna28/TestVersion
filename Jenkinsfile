@@ -10,7 +10,7 @@ pipeline {
             steps{
                 sh "docker pull ferrarimarco/github-changelog-generator"
                 //docker.image('ferrarimarco/github-changelog-generator').withRun('-p 3306:3306')
-                docker run -it --rm "$(pwd)":/usr/local/src/TestVersion ferrarimarco/github-changelog-generator
+                sh "docker run -it ferrarimarco/github-changelog-generator"
             }
         }
     }
