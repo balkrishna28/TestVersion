@@ -9,9 +9,11 @@ pipeline {
         stage ("docker"){
             steps{
                 sh "docker pull ferrarimarco/github-changelog-generator"
-                sh "docker run ferrarimarco/github-changelog-generator  --user  balkrishna28  --project TestVersion " 
-                sh "docker run  ferrarimarco/github-changelog-generator -it --rm -v "$(pwd)":/usr/local/src/your-app"
-
+                
+                docker.image("ferrarimarco/github-changelog-generator").inside("--volume $WORKSPACE:/app"){
+                    sh script: "ferrarimarco/github-changelog-generator -v"
+                }
+                //sh "docker run ferrarimarco/github-changelog-generator  --user  balkrishna28  --project TestVersion " 
             }
         } 
     }
