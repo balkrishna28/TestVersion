@@ -20,7 +20,7 @@ pipeline {
                     sh 'git remote -v'
                     sh 'git add CHANGELOG.md'
                     sh 'git commit -m "its not working"'
-                    sh 'git push -u origin master'
+                    sh 'git push --force-with-lease=master:base master:master'
              }
         } 
     }
