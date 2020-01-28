@@ -18,7 +18,7 @@ pipeline {
                     //sh 'git remote add origin git@github.com:balkrishna28/TestVersion.git'
                     sh 'git add CHANGELOG.md'
                     sh 'git commit -m "its not working"'
-                    sh 'git push origin'
+                    sh 'git push origin HEAD:master'
              }
         } 
     }
