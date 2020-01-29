@@ -21,7 +21,7 @@ pipeline {
                     sh 'git checkout master'
                     sh 'git add CHANGELOG.md'
                     sh 'git commit -m "its not working"'
-                    sh 'git push --force-with-lease=master:base master:master'
+                    sh 'git push origin master'
              }
         } 
     }
