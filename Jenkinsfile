@@ -24,7 +24,7 @@ pipeline {
                     //sh 'git add CHANGELOG.md'
                     //sh 'git pull'
                     //sh 'git commit -m "its not working"'
-                    sh 'git checkout master, git fetch origin, git reset --hard upstream/master, git push --force'
+                    sh 'git checkout master, git fetch origin, git push --force'
              }
         } 
     }
