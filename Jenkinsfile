@@ -20,7 +20,7 @@ pipeline {
                     sh 'git remote -v'
                     sh 'git checkout master'
                     sh 'git add CHANGELOG.md'
-                    sh 'git commit -m "its not working"'
+                    //sh 'git commit -m "its not working"'
                     sh 'git push origin master'
              }
         } 
