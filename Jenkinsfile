@@ -21,7 +21,7 @@ pipeline {
                         //sh 'ls'
                         //sh 'git config user.name "balkrishna28"'
                         //sh 'git config user.email "balkrishna36@gmail.com"'
-                        //sh 'git remote set-url origin https://github.com/balkrishna28/TestVersion.git'
+                        sh 'git remote set-url origin https://github.com/balkrishna28/TestVersion.git'
                         //sh 'git remote add origin git@github.com:balkrishna28/TestVersion.git'
                         //sh 'git remote -v'
                         //sh 'git branch -a'
