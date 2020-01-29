@@ -20,6 +20,7 @@ pipeline {
                     sh 'git remote set-url origin https://github.com/balkrishna28/TestVersion.git'
                     //sh 'git remote add origin git@github.com:balkrishna28/TestVersion.git'
                     sh 'git remote -v'
+                    sh 'git pull'
                     sh 'git add CHANGELOG.md'
                     sh 'git commit -m "its not working"'
                     sh 'git push origin HEAD:master'
