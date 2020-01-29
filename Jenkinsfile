@@ -13,7 +13,7 @@ pipeline {
 
                         //sh 'git ls-remote -h --refs git@github.com:balkrishna28/TestVersion.git master |awk "{print $1}"'
                         //sh "docker pull ferrarimarco/github-changelog-generator"
-                        //sh 'git checkout master'
+                        sh 'git checkout master'
                         //sh 'docker run --rm -v "$(pwd)":/usr/local/src/your-app ferrarimarco/github-changelog-generator --user  balkrishna28  --project TestVersion'
                         sh 'touch CHANGELOG.md'
                         sh 'cd /var/lib/jenkins/workspace/TestVersionNumber'
