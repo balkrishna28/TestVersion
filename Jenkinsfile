@@ -7,11 +7,11 @@ pipeline {
             }
         }
         stage ("docker") {
-            sshagent (credentials:['github-key']){
-                steps{
+            steps{
+                sshagent (credentials:['github-key']){
                     script {
-                        
-                        sh 'git ls-remote -h --refs git@github.com:balkrishna28/TestVersion.git master |aqk "{print $1}"' 
+
+                        sh 'git ls-remote -h --refs git@github.com:balkrishna28/TestVersion.git master |aqk "{print $1}"'
                         //sh "docker pull ferrarimarco/github-changelog-generator"
                         //sh 'git checkout master'
                         //sh 'docker run --rm -v "$(pwd)":/usr/local/src/your-app ferrarimarco/github-changelog-generator --user  balkrishna28  --project TestVersion'
@@ -35,4 +35,3 @@ pipeline {
         }
     }
 }
-
