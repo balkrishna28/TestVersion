@@ -26,10 +26,10 @@ pipeline {
                         //sh 'git branch -a'
                         //sh 'git add CHANGELOG.md'
                         sh 'git pull'
-                        sh 'git push'
+                        sh 'git push origin'
                         //sh 'git commit -m "its not working"'
                         //sh 'git branch'
-                        sh 'git  push origin HEAD:master'
+                        //sh 'git  push origin HEAD:master'
                     }
                 }
             }
