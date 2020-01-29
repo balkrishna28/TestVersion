@@ -11,7 +11,7 @@ pipeline {
                 sshagent (credentials:['github-key']){
                     script {
 
-                        sh 'git clone git@github.com:balkrishna28/TestVersion.git'
+                        //sh 'git clone git@github.com:balkrishna28/TestVersion.git'
                         //sh 'git ls-remote -h --refs git@github.com:balkrishna28/TestVersion.git master |awk "{print $1}"'
                         //sh "docker pull ferrarimarco/github-changelog-generator"
                         sh 'git checkout master'
