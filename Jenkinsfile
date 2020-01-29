@@ -18,9 +18,9 @@ pipeline {
                     sh 'git remote set-url origin https://github.com/balkrishna28/TestVersion.git'
                     //sh 'git remote add origin git@github.com:balkrishna28/TestVersion.git'
                     sh 'git remote -v'
-                    sh 'git checkout master'
+                    //sh 'git checkout master'
                     sh 'git add CHANGELOG.md'
-                    //sh 'git commit -m "its not working"'
+                    sh 'git commit -m "its not working"'
                     sh 'git push origin master'
              }
         } 
