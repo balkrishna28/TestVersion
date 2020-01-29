@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/balkrishna28/TestVersion/tree/HEAD)
+## [v.1.1](https://github.com/balkrishna28/TestVersion/tree/v.1.1) (2020-01-29)
 
-[Full Changelog](https://github.com/balkrishna28/TestVersion/compare/v.1...HEAD)
+[Full Changelog](https://github.com/balkrishna28/TestVersion/compare/v.1...v.1.1)
 
 **Merged pull requests:**
 
