@@ -20,6 +20,7 @@ pipeline {
                         //sh 'git pull'
                         sh 'git add CHANGELOG.md'
                         sh 'git commit -m "Auto add changelog"'
+                        sh 'git pull'
                         sh 'git push origin HEAD:master'
                     }
                 }
