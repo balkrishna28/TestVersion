@@ -23,7 +23,7 @@ pipeline {
                     
                     sh 'git add CHANGELOG.md'
                     sh 'git pull'
-                    sh 'git push'
+                    sh 'git push origin/master'
                     sh 'git commit -m "its not working"'
                     sh 'git  push origin/master '
              }
